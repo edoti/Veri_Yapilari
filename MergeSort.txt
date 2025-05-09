@@ -1,0 +1,40 @@
+Merge Sort
+Proje 2
+
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+1. Önce ortadan bölünür.
+[16, 21, 11] [8,12,22]
+
+2. Bölünenler de ortadan bölünür.
+[16,21] [11]  [8,12] [22]
+
+3. bölünenler kendi içinde sıralanır. Küçük olan sol tarafa geçer.
+[16,21] [11] [8,12] [22]
+
+4. Bölünenlerin solundakiler yani en küçükler birbiri ile kıyaslanır.
+[11, 16, 21] [8, 12, 22]
+
+5. 11 8 bu ikili çiftin en küçük sayıları. 8 en solda yerini aldı ve bulunduğu çiftin en solundan silindi.
+	8, ....
+	[11, 16, 21] [12, 22]
+
+6. 11 ve 12 ikili çiftin en küçükleri ve 11, 8'in yanına yerleşti.
+	8,11, ....
+	[16, 21] [12, 22]
+
+7. 16 ve 12 ikili çiftin en küçükleri ve 12, 11'in yanına yerleşti.
+	8,11,12, ....
+	[16, 21] [22]
+
+8. 16 ve 22 ikili çiftin en küçükleri ve 16, 12'nin yanına yerleşti.
+	8,11,12,16,...
+	[21] [22]
+9. 21 ve 22 kaldı de sırada yerini aldı.
+	8,11,12,16,21,22
+
+
+
+Big-O gösterimini yazınız.
+	O(n log n)
