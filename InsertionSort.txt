@@ -1,0 +1,44 @@
+Insertion Sort Projesi
+
+[22,27,16,2,18,6] -> Insertion Sort
+
+1. İlk eleman sıralı olduğu kabul edilir. 
+2. 22<27 olduğu için
+	[22,27,16,2,18,6]
+3. 16<27 ve 16<22 olduğu için önce 27'nin sonra da 22'nin önüne geçer
+	[16,22,27,2,18,6]
+4. 2<27, 2<22 ve 2<16 olduğu için sırasıyla 27, 22 ve 16'nın önüne geçer
+	[2,16,22,27,18,6]
+5. 18<27, 18<22 olduğu için sırasıyla 27 ve 22'nin önüne geçer. Ama 16<18 olduğundan 22'nin önüne yerleşir.
+	[2,16,18,22,27,6]
+6. 6<27, 6<22, 6<18, 6<16 olduğundan sırasıyla 27, 22, 18, 16'nın önüne geçer. 2<6 olduğundan 16'nın önüne yerleşir.
+	[2,6,16,18,22,27]
+
+
+Big-o gösterimi
+	Worst case (ters sıralı liste): 𝑂(n²)
+	Best case (sıralı liste): 𝑂(n)
+	Average case: 𝑂(n²)
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer?
+	18 sayısı tam ortadadır. Bu yüzden Average Case'dir.
+	
+
+[7,3,5,8,2,9,4,15,6] -> Selection Sort
+
+	En küçük sayı bulunur ve en baştaki ile yer değiştirir.
+	2. en küçük sayı bulunur 2. sıradaki sayı ile yer değiştirir.
+	...
+1. [2,3,5,8,7,9,4,15,6]
+2. [2,3,5,8,7,9,4,15,6]
+3. [2,3,4,8,7,9,5,15,6]
+4. [2,3,4,5,7,9,8,15,6]
+5. [2,3,4,5,6,9,8,15,7]
+6. [2,3,4,5,6,7,8,15,9]
+7. [2,3,4,5,6,7,8,15,9] -> 8 yerinde
+8. [2,3,4,5,6,7,8,9,15]
+
+Big-o gösterimi
+	Best case: 𝑂(n²)
+	Average case: 𝑂(n²)
+	Worst case: 𝑂(n²)
